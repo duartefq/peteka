@@ -18,7 +18,7 @@
 
 	- **Third Screen:**
 
-	 	* Displays information about a task:
+	 	* Displays information about a document:
 	 		- Title;
 	 		- Instructions;
 	 		- Request date;
@@ -27,6 +27,7 @@
 	 		- Requester Employee;
 	 		- Situation: Requested/Done;
 	 		- Approved: Yes/Not;
+	 		- File: Display the file to download
 
 	- **Fourth Screen (Edit/Create a tast):**
 
