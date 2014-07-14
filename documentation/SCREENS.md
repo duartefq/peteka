@@ -1,8 +1,8 @@
 ![peteka](https://dl.dropboxusercontent.com/u/85402777/peteca.png) Peteka > Screen Layouts
 ========
 
-1. User
----------
+ 1. User
+ ---------
  	- **First Screen**
 
  		* Login screen;
@@ -37,6 +37,6 @@
 	 	* Lists all approved documents (Just one tab);
 		* All document cells must be links to the respective document (Third screen);
 
-2. Admin
----------
+ 2. Admin
+ ---------
 	...
