@@ -4,12 +4,12 @@
  1. User
  ---------
  	- First Screen
- 	---------
+
  		* Login screen
  		Asks for email and password
 
  	- Second Screen
- 	---------
+
 	 	* Lists to do documents
 	 	* Lists Peding documents
 	 	* Lists completed documents
@@ -17,7 +17,7 @@
 	 	Ps: All document cells must be links to the respective document (Third screen)
 
 	 - Third Screen:
-	---------
+
 	 	* Displays information about a task:
 	 		- Title
 	 		- Instructions
@@ -29,11 +29,11 @@
 	 		- Approved: Yes/Not
 
 	 - Fourth Screen (Edit/Create a tast):
-	---------
+
 	 	* The same information of the third screen in a form.
 
 	 - Fifth Screen:
-	---------
+
 	 	* Lists all approved documents (Just one tab)
 	 	Ps: All document cells must be links to the respective document (Third screen)
 
