@@ -1,7 +1,7 @@
 ![peteka](https://dl.dropboxusercontent.com/u/85402777/peteca.png) Peteka > Screen Layouts
 ========
 
- User
+ 1. User
  ---------
  	- **First Screen**
 
