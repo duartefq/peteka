@@ -33,3 +33,8 @@ User
 - **Fifth Screen:**
 	* Lists all approved documents (Just one tab);
 	* All document cells must be links to the respective document (Third screen);
+
+Admin
+---------
+
+	...
