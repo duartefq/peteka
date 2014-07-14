@@ -16,7 +16,7 @@
 	 	See the bootstrap tabs system: [Togglable tabs](http://getbootstrap.com/javascript/#tabs).
 	 	Ps: All document cells must be links to the respective document (Third screen)
 
-	 - Third Screen:
+	- Third Screen:
 
 	 	* Displays information about a task:
 	 		- Title
@@ -28,11 +28,11 @@
 	 		- Situation: Requested/Done
 	 		- Approved: Yes/Not
 
-	 - Fourth Screen (Edit/Create a tast):
+	- Fourth Screen (Edit/Create a tast):
 
 	 	* The same information of the third screen in a form.
 
-	 - Fifth Screen:
+	- Fifth Screen:
 
 	 	* Lists all approved documents (Just one tab)
 	 	Ps: All document cells must be links to the respective document (Third screen)
