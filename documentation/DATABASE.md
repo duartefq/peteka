@@ -21,11 +21,15 @@ Tables
 	| ID           |
 	| NAME         |
 	| EMAIL        |
-	| TODO         | List of all documents to do.
-	| PENDING      | List of all documents waiting for approval
-	| DONE         | List of all completed and approved documents
+	| TODO         | 
+	| PENDING      | 
+	| DONE         | 
 	| SUBORDINATES |
 	| SUPERVISORS  |
+
+	- **TODO:** List of all documents to do.
+	- **PENDING:** List of all documents waiting for approval
+	- **DONE:** List of all completed and approved documents
 
 * Document:
 
@@ -38,7 +42,9 @@ Tables
 	| DUE_DATE             |
 	| RESPONSIBLE_EMPLOYEE |
 	| REQUESTER_EMPLOYEE   |
-	| SITUATION            | Requested/Done
-	| APPROVED             | Yes/Not
+	| SITUATION            | 
+	| APPROVED             | 
 	| FILE                 | 
 
+	- **SITUATION:** Requested/Done
+	- **APPROVED:** Yes/Not
