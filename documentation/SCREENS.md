@@ -6,6 +6,7 @@
  	- **First Screen**
 
  		* Login screen;
+
  		(Asks for email and password)
 
  	- **Second Screen**
@@ -13,6 +14,7 @@
 	 	* Lists to do documents;
 	 	* Lists Peding documents;
 	 	* Lists completed documents;
+
 		See the bootstrap tabs system: [Togglable tabs](http://getbootstrap.com/javascript/#tabs).
 	 	Ps: All document cells must be links to the respective document (Third screen)
 
@@ -35,6 +37,7 @@
 	- **Fifth Screen:**
 
 	 	* Lists all approved documents (Just one tab);
+	 	
 	 	(Ps: All document cells must be links to the respective document (Third screen))
 
 2. Admin
