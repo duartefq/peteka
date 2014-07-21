@@ -6,12 +6,10 @@ class Employee(models.Model):
 	name = models.CharField(max_length="200")
 	email = models.CharField(max_length="200")
 	password = models.CharField(max_length="50")
+	supervisors = models.ManyToManyField('self', related_name='supervisors_id', null=True, blank=True)
+	subordinates = models.ManyToManyField('self', related_name='subordinates_id', null=True, blank=True)
 	def __unicode__(self):  # Python 3: def __str__(self):
-		return self.name
-
-class Supervisor_Employee(models.Model):
-	supervisor = models.ForeignKey(Employee, related_name='supervisor')
-	employee = models.ForeignKey(Employee, related_name='employee')
+		return self.name	
 
 class Document(models.Model):
 	title = models.CharField(max_length="200")

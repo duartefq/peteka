@@ -1,0 +1,12 @@
+{% extends "admin/base.html" %}
+{% load i18n %}
+
+{% block title %}{{ title }} | {% trans 'Django site admin' %}{% endblock %}
+
+{% block branding %}
+<img src="https://dl.dropboxusercontent.com/u/85402777/peteca.png" alt="peteka" height="40" align="left" style="padding-left: 20px; padding-bottom: 10px; padding-right: 10px">
+<h1 id="site-name" style="color: #fff; font-size: 25pt">{% trans 'Peteka administration' %}</h1>
+
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
