@@ -24,12 +24,18 @@ Tables
 	| TODO         | 
 	| PENDING      | 
 	| DONE         | 
-	| SUBORDINATES |
-	| SUPERVISORS  |
 
 	- **TODO:** List of all documents to do.
 	- **PENDING:** List of all documents waiting for approval
 	- **DONE:** List of all completed and approved documents
+
+* Supervisor|Employee relation
+
+	|SUPERVISOR_EMPLOYEE|
+	|-------------------|
+	|ID                 |
+	|ID_SUPERVISOR      |
+	|ID_SUPERVISOR      |
 
 * Document:
 
