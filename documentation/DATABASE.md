@@ -22,8 +22,7 @@ Tables
 	| NAME          |
 	| EMAIL         |
 	| PASSWORD      | 
-	|SUPERVISORS_ID |
-	|SUBORDINATES_ID|
+	| SUPERVISOR_ID |
 
 
 * Document:
@@ -49,34 +48,14 @@ SQL by manage.py
 
 ```
 BEGIN;
-CREATE TABLE 'department_employee_subordinates' (
-    'id' integer AUTO_INCREMENT NOT NULL PRIMARY KEY,
-    'from_employee_id' integer NOT NULL,
-    'to_employee_id' integer NOT NULL,
-    UNIQUE ('from_employee_id', 'to_employee_id')
-);
-
-CREATE TABLE 'department_employee_supervisors' (
-    'id' integer AUTO_INCREMENT NOT NULL PRIMARY KEY,
-    'from_employee_id' integer NOT NULL,
-    'to_employee_id' integer NOT NULL,
-    UNIQUE ('from_employee_id', 'to_employee_id')
-);
-
 CREATE TABLE 'department_employee' (
     'id' integer AUTO_INCREMENT NOT NULL PRIMARY KEY,
     'name' varchar(200) NOT NULL,
     'email' varchar(200) NOT NULL,
-    'password' varchar(50) NOT NULL
+    'password' varchar(50) NOT NULL,
+    'supervisor_id' integer
 );
-
-ALTER TABLE 'department_employee_subordinates' ADD CONSTRAINT 'from_employee_id_refs_id_af9c22a9' FOREIGN KEY ('from_employee_id') REFERENCES 'department_employee' ('id');
-
-ALTER TABLE 'department_employee_subordinates' ADD CONSTRAINT 'to_employee_id_refs_id_af9c22a9' FOREIGN KEY ('to_employee_id') REFERENCES 'department_employee' ('id');
-
-ALTER TABLE 'department_employee_supervisors' ADD CONSTRAINT 'from_employee_id_refs_id_1e93561c' FOREIGN KEY ('from_employee_id') REFERENCES 'department_employee' ('id');
-
-ALTER TABLE 'department_employee_supervisors' ADD CONSTRAINT 'to_employee_id_refs_id_1e93561c' FOREIGN KEY ('to_employee_id') REFERENCES 'department_employee' ('id');
+ALTER TABLE 'department_employee' ADD CONSTRAINT 'supervisor_id_refs_id_7bb17efc' FOREIGN KEY ('supervisor_id') REFERENCES 'department_employee' ('id');
 
 CREATE TABLE 'department_document' (
     'id' integer AUTO_INCREMENT NOT NULL PRIMARY KEY,
@@ -87,10 +66,9 @@ CREATE TABLE 'department_document' (
     'situation' integer NOT NULL,
     'approved' integer NOT NULL,
     'pdf' varchar(100) NOT NULL,
-    'responsible_id' integer NOT NULL,
-    'requester_id' integer NOT NULL
+    'responsible_id' integer,
+    'requester_id' integer
 );
-
 ALTER TABLE 'department_document' ADD CONSTRAINT 'responsible_id_refs_id_c7d82ff6' FOREIGN KEY ('responsible_id') REFERENCES 'department_employee' ('id');
 
 ALTER TABLE 'department_document' ADD CONSTRAINT 'requester_id_refs_id_c7d82ff6' FOREIGN KEY ('requester_id') REFERENCES 'department_employee' ('id');
