@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width", initial-scale="1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="icon" href="https://dl.dropboxusercontent.com/u/85402777/static/img/peteca.ico">
+	<link href="https://dl.dropboxusercontent.com/u/85402777/static/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/85402777/static/css/style.css">
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
+
+	<title>Peteka</title>
+
+	<script type="text/javascript">
+		function getYear() {
+			var startYear = 2014;
+			var year = new Date().getFullYear();
+
+			var return_data = startYear.toString() + ( (year > startYear)?(" - " + year):"" );
+			document.getElementById("footerYear").innerHTML = return_data;
+		}
+	</script>
+
+	</head>
+	<body data-spy="scroll" onload="getYear()">
+
+		<!-- Tabs -->
+		<ul id="tabs" class="nav nav-tabs" style="padding-left: 20px;">
+			<li><h4>Peteka <small>CPSC 2261</small></h4></li>
+			<li class="active">
+				<a href="#mainTab" role="tab" data-toggle="tab">
+					<span class="glyphicon glyphicon-home"></span> Home
+				</a>
+			</li>
+			<li>
+				<a href="#todoTab" role="tab" data-toggle="tab">
+					<span class="glyphicon glyphicon-list-alt"></span> To Do
+				</a>
+			</li>
+			<li>
+				<a href="#pendingTab" role="tab" data-toggle="tab">
+					<span class="glyphicon glyphicon-time"></span> Pending
+				</a>
+			</li>
+			<li>
+				<a href="#completedTab" data-toggle="tab">
+					<span class="glyphicon glyphicon-ok"></span> Completed
+				</a>
+			</li>
+		</ul>
+
+		<br/>
+	
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div class="tab-pane fade in active" id="mainTab">
+				<article>
+					<p>This is the main page.</p>	
+				</article>
+			</div>
+			<div class="tab-pane fade in" id="todoTab">
+				<table class="table table-hover">
+					<tr>
+						<th>#</th>
+						<th>Projects To Do</th>
+						<th>Due Date</th>
+						<th>Files</th>
+						<th>Upload</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>Example</td>
+						<td>July 27, 2014</td>
+						<td><a href="http://www.google.ca">Download</a></td>
+						<td>July 19, 2014</td>
+					</tr>
+				</table>
+			</div>
+			<div class="tab-pane fade in" id="pendingTab">
+				<table class="table table-hover">
+					<tr>
+						<th>#</th>
+						<th>Projects To Do</th>
+						<th>Due Date</th>
+						<th>Files</th>
+						<th>Upload</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>Example</td>
+						<td>July 27, 2014</td>
+						<td><a href="http://www.google.ca">Download</a></td>
+						<td>July 19, 2014</td>
+					</tr>
+				</table>
+			</div>
+			<div class="tab-pane fade in" id="completedTab">
+				<table class="table table-hover">
+					<tr>
+						<th>#</th>
+						<th>Completed Projects</th>
+						<th>Comments</th>
+						<th>Download</th>
+					</tr>
+
+					<tr>
+						<td>1</td>
+						<td>French Connection</td>
+						<td>Good job</td>
+						<td><a href="http://www.google.ca">Download</a></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+		    jQuery(document).ready(function ($) {
+		        $('#tabs').tab();
+		    });
+		</script> 
+
+		<!-- Footer -->
+		<footer>
+			
+			<p>
+				Copyright &copy; <span id="footerYear"></span>
+			</p>
+			<p>
+				Peteka Team: Joab Duarte Eric.
+			</p> 
+		</footer>
+		<script src="https://dl.dropboxusercontent.com/u/85402777/static/js/bootstrap.js"></script>
+	</body>
+</html>
